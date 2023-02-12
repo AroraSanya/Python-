@@ -57,58 +57,6 @@ def string_email_validation(s):
            raise Exception("email not valid")
     else:
        raise Exception("email not valid")
-
-# string_email_validation(s)
-# def password_checker(password):
-#     flag = 0
-# @Registration_format
-# def user_login(email_id,password):
-#     return email_id
-#     return password
-#     while True:
-#         if(Registration_format(email_address)==user_login(email_id)):
-#             elif (Registration_format(password_checker)==user_login(password)):
-        
-# while True:
-#     if len(password)<=8:
-#         flag = -1
-#         print("enter the password having minimum length 8")
-#         break
-#     elif not re.search("[a-z]",password):
-#         flag = -1
-#         break
-#     elif not re.search("[A-Z]", password):
-#         flag = -1
-#         break
-#     elif not re.search("[0-9]", password):
-#         flag = -1
-#         break
-#     elif not re.search("[_@$]" , password):
-#         flag = -1
-#         break
-#     else:
-#         flag = 0
-#         return "Valid Password"
-#         break
-#     if flag == -1:
-#     return "not a valid password"
-# message= input("enter the details")
-# user_first_name = input("enter the first name =")
-# user_last_name = input("enter the last name =")
-# user_birthday = input('Enter your birthday in dd/mm/yyyy format')
-# day, month, year = list(map(int, user_birthday.split("/")))
-# birthdate = datetime.date(year,month,day)
-# a = Registration_format(user_first_name,user_last_name,user_birthday)
-
-# print("first_name = ",user_first_name)
-# print("last_name = ",user_last_name)
-# print("birthday = ", user_birthday)
-# email_enter = input("enter email address =")
-# b = email_address(email_enter)
-# print("email_address = ",b)
-# password_enter = input("enter the password=")
-# c1 = password_checker(password_enter)
-# print(c1)
 while True:
     print("1. register")
     print("2. login")
@@ -124,4 +72,4 @@ while True:
     elif option==3:
         break
     else:
-        print("INVALID")    
+        print("INVALID!")   
