@@ -17,24 +17,15 @@ print(p1)
 print(p1.display())
 
 
-# # multiple inheritance
-
-# class calculator1:
-#     def __init__(self,a):
-#         self.a=a
-#         # self.b=b
-#     def __mul__(self,other):
-#         return calculator1(self.a*other.a)
-# c1=calculator1(3)        
-# c2=calculator1(2)
-# print(c1*c2)
+# multiple inheritance
 
 class Calculator1:
-    def __init__(self,a,b):
-        self.a=a
-        self.b=b
-    def mul(self):
-        return self.a*self.b
+    def __init__(self,val):
+        self.val=val
+        # self.b=b
+    def __mul__(self,other):
+        return (self.val*other.val)
+
 
 class Calculator2:
     def __init__(self,a,b):
@@ -48,14 +39,15 @@ class Calculator3(Calculator1,Calculator2):
         self.a=a
         self.b=b
     def sub(self):
-        return self.a-self.b     
-c3=Calculator3(4,5)
-print(c3.mul())
+        return self.a-self.b   
+c1=Calculator1(3)        
+c2=Calculator1(2)
+print(c1*c2)          
+c3=Calculator3(7,5)
 print(c3.add()) 
 print(c3.sub()) 
               
-         
-
+        
 #multilevel inheritence
 class GrandParent:
     def head(self):
