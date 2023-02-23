@@ -34,8 +34,8 @@ def get_one_user():
         # print(type(user['id']))
 
     
-# user_id()    
+user_id()    
 request_blog()
 print(get_one_user())
 
-# print(showallUser())
+print(showallUser())
